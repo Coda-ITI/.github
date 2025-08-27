@@ -1,12 +1,13 @@
-## Hi there 👋
+# Coda: A Digital Cockpit
 
-<!--
+## Background
 
-**Here are some ideas to get you started:**
+## About
+Coda is a multi-ECU, AI-driven, state of the art well-rounded system featuring two screens, road sign detection, a voice assistant, and intuitive UI that elevates a driver's experience to a new level.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+## Under The Hood
+Coda comprises of 4 main nodes:
+1. Baremetal Node: responsible for direct hardware interfacing for determining doors states, car speed and rpm, and ultrasonic sensors for safe-distance. These readings are sent via CAN. This ECU is based on the NXP S32K148-Q176.
+2. Detection Node: responsible for detecting road signs from a predefined selection while on the road. The detection model is a YOLOv8 nano model that was trained on a set of road signs. The detected signs are published to the Cluster Node via a CommonAPI service based on vSOME/IP. This ECU is based on NVIDIA Jetson Nano Developer's Kit running a custom Yocto distro. 
+3. Cluster Node: responsible for running the Instrument Cluster app on the first screen and routing CAN traffic towards the IVI Node. The Instrument Cluster app is built using Qt6 framework. The app displays some of the incoming data from CAN and forwards the rest to the IVI Node via a CommonAPI service based on vSOME/IP. This ECU is based on Raspberry Pi 5 16GB running a custom Yocto distro. 
+4. IVI Node: responsible for running the IVI app on the second screen in addition to a Voice Assistant app complying with Google's guidelines for development. The incoming data from Cluster Node is received via a CommonAPI service based on vSOME/IP; this service transfers the readings to the application layer through an AIDL contract that is used for registering callbacks in the application layer. Coda's Voice Assistant features wake word detection and multiply commands.
