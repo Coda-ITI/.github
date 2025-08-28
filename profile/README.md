@@ -1,9 +1,10 @@
 # Coda: A Digital Cockpit
 
-## Background
-
-## About
+## About Coda
 Coda is a multi-ECU, AI-driven, state of the art well-rounded system featuring two screens, road sign detection, a voice assistant, and intuitive UI that elevates a driver's experience to a new level.
+
+
+Coda represents the team's magnum opus: the graduation project of a long and hard journey in Information Technology Institute's 9 Month Professional Training Program Embedded Systems Track. You can consider it a love letter to this place; where all the skills acquired along the way have been put to the test. Our team is proud to say the output has been above our expectations.
 
 ## Under The Hood
 Coda comprises of 4 main nodes:
