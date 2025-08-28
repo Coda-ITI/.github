@@ -23,6 +23,23 @@ Coda comprises of 4 main nodes:
 7. [Baremetal Firmware](https://github.com/Coda-ITI/NXP-Baremetal)
 8. [Barmetal PCB](https://github.com/Coda-ITI/NXP-Expansion-Board)
 
+## Communication Stack (Adham)
+### Repositories
+1. [Detection Service](https://github.com/Coda-ITI/DetectionServiceApp)
+2. [Perception/CommManager Service](https://github.com/Coda-ITI/PerceptionServiceApp)
+3. [CAN Transmission](https://github.com/Coda-ITI/NXP-Baremetal)
+4. [Observation Service](https://github.com/Coda-ITI/Coda/tree/main/AIDL_ObserverToIVI)
+
+### Sequence Diagrams
+<img width="1234" height="777" alt="BaremetalxCommManager" src="https://github.com/user-attachments/assets/3da2e260-0c1b-437d-9298-bbe5a3e6a12d" />
+
+<img width="979" height="364" alt="DetectionxCommManager" src="https://github.com/user-attachments/assets/bdc66844-5468-46c0-bae2-8879cad37f78" />
+
+<img width="763" height="685" alt="ObservationxCommManager" src="https://github.com/user-attachments/assets/6a9c6819-cdc3-4e61-b450-68ae4175d909" />
+
+
+
+
 ## Manifests
 1. [Cluster Node](https://github.com/Coda-ITI/cluster_manifest)
 2. [Detection Node](https://github.com/Coda-ITI/jetson_manifest)
