@@ -21,6 +21,7 @@ Coda comprises of 4 main nodes:
 5. [Android Automotive Vendor Package](https://github.com/Coda-ITI/Coda)
 6. [Custom Yocto Meta Layer](https://github.com/Coda-ITI/meta-coda)
 7. [Baremetal Firmware](https://github.com/Coda-ITI/NXP-Baremetal)
+8. [Barmetal PCB](https://github.com/Coda-ITI/NXP-Expansion-Board)
 
 ## Manifests
 1. [Cluster Node](https://github.com/Coda-ITI/cluster_manifest)
