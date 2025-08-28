@@ -13,7 +13,7 @@ Coda comprises of 4 main nodes:
 4. IVI Node: responsible for running the IVI app on the second screen in addition to a Voice Assistant app complying with Google's guidelines for development. The incoming data from Cluster Node is received via a CommonAPI service based on vSOME/IP; this service transfers the readings to the application layer through an AIDL contract that is used for registering callbacks in the application layer. Coda's Voice Assistant features wake word detection and multiply commands.
 
 ## Main Repositories
-1. [IVI App](https://github.com/Coda-ITI/IVI-Coda).
+1. [IVI App](https://github.com/Coda-ITI/IVI-Coda)
 2. [Instrument Cluster App](https://github.com/Coda-ITI/InstrumentCluster)
 3. [Voice Assistant App](https://github.com/Coda-ITI/Coda_Assistant)
 4. [Road Sign Detection Model](https://github.com/Coda-ITI/road-sign-detection-YOLO)
