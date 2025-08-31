@@ -37,10 +37,12 @@ Coda comprises of 4 main nodes:
 
 <img width="763" height="685" alt="ObservationxCommManager" src="https://github.com/user-attachments/assets/6a9c6819-cdc3-4e61-b450-68ae4175d909" />
 
-
+## Demo
+https://github.com/user-attachments/assets/63d36ae8-27b0-4718-bdf7-165c6ef27af5
 
 
 ## Manifests
+
 1. [Cluster Node](https://github.com/Coda-ITI/cluster_manifest)
 2. [Detection Node](https://github.com/Coda-ITI/jetson_manifest)
 3. [IVI Node](https://github.com/Coda-ITI/android_local_manifest)
