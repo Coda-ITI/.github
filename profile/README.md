@@ -13,6 +13,21 @@ Coda comprises of 4 main nodes:
 3. Cluster Node: responsible for running the Instrument Cluster app on the first screen and routing CAN traffic towards the IVI Node. The Instrument Cluster app is built using Qt6 framework. The app displays some of the incoming data from CAN and forwards the rest to the IVI Node via a CommonAPI service based on vSOME/IP. This ECU is based on Raspberry Pi 5 16GB running a custom Yocto distro. 
 4. IVI Node: responsible for running the IVI app on the second screen in addition to a Voice Assistant app complying with Google's guidelines for development. The incoming data from Cluster Node is received via a CommonAPI service based on vSOME/IP; this service transfers the readings to the application layer through an AIDL contract that is used for registering callbacks in the application layer. Coda's Voice Assistant features wake word detection and multiply commands.
 
+<img width="910" height="587" alt="coda_block" src="https://github.com/user-attachments/assets/3e536853-236f-442c-b02a-6d140d506fb1" />
+
+### Baremetal Node Block Diagram
+<img width="1051" height="389" alt="baremetal_block" src="https://github.com/user-attachments/assets/ef42c16e-785c-432d-bda7-f14c956effa3" />
+
+### Detection Node Block Diagram
+<img width="580" height="563" alt="detection_block" src="https://github.com/user-attachments/assets/7059158b-8f49-47ff-9474-ef0973556827" />
+
+### Cluster Node Block Diagram
+<img width="1024" height="602" alt="cluster_block" src="https://github.com/user-attachments/assets/9d091a94-beb8-4c5c-9bc0-6c98773358b3" />
+
+### IVI Node Block Diagram
+<img width="1272" height="746" alt="ivi_block" src="https://github.com/user-attachments/assets/8fecaaaf-2c3a-476b-bc63-1cbb7c29158b" />
+
+
 ## Main Repositories
 1. [IVI App](https://github.com/Coda-ITI/IVI-Coda)
 2. [Instrument Cluster App](https://github.com/Coda-ITI/InstrumentCluster)
